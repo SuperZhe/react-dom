@@ -1,0 +1,43 @@
+.headerLeft img{
+    width:2rem;
+    margin-left: -0.6rem;
+}
+header{
+    position: relative;
+    font-size: 0.4rem;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.2rem;
+    padding: 0 0.6rem;
+    background-color:rgba(255, 166, 166,1);
+}
+.headerRight{
+
+    display: inline-block;
+}
+.headerRight i{
+    display: block;
+    height: 0.06rem;
+    width: 0.6rem;
+    background-color: #fff;
+    margin: 0.1rem 0;
+}
+.secondaryNav{
+    height:0;
+    width:2rem;
+    overflow: hidden;
+}
+.secondaryNav span{
+    display: block;
+    width:2rem;
+    height:1rem;
+    letter-spacing: 1px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1rem;
+    border-bottom: 1px solid #666;
+}
