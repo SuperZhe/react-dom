@@ -1,29 +1,29 @@
-import React, {Component} from 'react';
-import {Link,BrowserRouter,Route} from 'react-router-dom';
+import React, { Component } from 'react';
+import { BrowserRouter, Route ,Switch} from 'react-router-dom';
 
-import AppOne from '../component/App'
+import AppOne from '../component/App';
+import Index from '../views/index/index';
+import Cookies from '../views/cookies/cookies';
 
-import Cookies from '../views/cookies/cookies'
 //引入脚部导航
 
-class RouterContent extends Component{
-	constructor(){
-		super()
+class RouterContent extends Component {
+	constructor() {
+		super();
 	}
-	render(){
-		return(
+
+	render() {
+		return (
 			<BrowserRouter>
 				<div>
-
 					<Route exact path="/" component={AppOne}>
-						
+						<Route path="" component={Index}/>
+						<Route path="/cookies" component={Cookies}/>
 					</Route>
-					<Route path="/cookies" component={Cookies}/>
-
 				</div>
-
 			</BrowserRouter>
-		)
+		);
 	}
 }
-export default RouterContent
+
+export default RouterContent;

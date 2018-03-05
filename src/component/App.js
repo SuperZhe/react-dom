@@ -5,7 +5,7 @@
 import React, { Component } from 'react';
 import Footer from '../component/footer/footer'
 import Header from '../component/header/header'
-import Index from '../views/index/index'
+
 class App extends Component {
 	render() {
 		return (
